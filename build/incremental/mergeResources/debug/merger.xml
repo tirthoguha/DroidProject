@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res" >
+            <file
+                name="ic_launcher"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="activity_main"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="friday_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/friday_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="friday_list_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/friday_list_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="home_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/home_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="monday_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/monday_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="monday_list_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/monday_list_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="thursday_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/thursday_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="thursday_list_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/thursday_list_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="tuesday_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/tuesday_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="tuesday_list_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/tuesday_list_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="wednesday_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/wednesday_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="wednesday_list_fragment"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/wednesday_list_fragment.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="main"
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/menu/main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values/strings.xml"
+                qualifiers="" >
+                <string name="thursdayTView" >Thursdays current date and time:
+                </string>
+                <string name="wednesdayBtn" >Wednesday
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="mondayBtn" >Monday
+                </string>
+                <string name="nextBtn" >Next
+                </string>
+                <string name="homeBtn" >Home
+                </string>
+                <string name="saveDiaryEntryBtn" >Save Diary Entry
+                </string>
+                <string name="menu_profile" >Profile
+                </string>
+                <string name="showDiaryEntriesBtn" >Show Diary Entries
+                </string>
+                <string name="wednesdayTView" >Wednesdays current date and time:
+                </string>
+                <string name="menu_saveEntries" >Save entries
+                </string>
+                <string name="writeDiaryEntryHere" >Write diary entry here
+                </string>
+                <string name="thursdayBtn" >Thursday
+                </string>
+                <string name="diaryEntryTView" >Diary Entry:
+                </string>
+                <string name="fridayBtn" >Friday
+                </string>
+                <string name="fridayTView" >Fridays current date and time:
+                </string>
+                <string name="menu_sendAllEntries" >Send all entries
+                </string>
+                <string name="previousBtn" >Previous
+                </string>
+                <string name="mondayTView" >Mondays current date and time:
+                </string>
+                <string name="app_name" >S0217980_diary
+                </string>
+                <string name="tuesdayTView" >Tuesdays current date and time:
+                </string>
+                <string name="tuesdayBtn" >Tuesday
+                </string>
+            </file>
+            <file
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values-sw720dp-land/dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+        </source>
+        <source path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/build/res/rs/debug" />
+        <source path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/build/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/tirthoguha/Documents/android/workspace/S0217980_diary/build-types/debug/res" />
+    </dataSet>
+
+</merger>

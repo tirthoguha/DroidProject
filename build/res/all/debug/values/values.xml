@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">S0217980_diary</string>
+    <string name="diaryEntryTView">Diary Entry:</string>
+    <string name="fridayBtn">Friday</string>
+    <string name="fridayTView">Fridays current date and time:</string>
+    <string name="homeBtn">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_saveEntries">Save entries</string>
+    <string name="menu_sendAllEntries">Send all entries</string>
+    <string name="mondayBtn">Monday</string>
+    <string name="mondayTView">Mondays current date and time:</string>
+    <string name="nextBtn">Next</string>
+    <string name="previousBtn">Previous</string>
+    <string name="saveDiaryEntryBtn">Save Diary Entry</string>
+    <string name="showDiaryEntriesBtn">Show Diary Entries</string>
+    <string name="thursdayBtn">Thursday</string>
+    <string name="thursdayTView">Thursdays current date and time:</string>
+    <string name="tuesdayBtn">Tuesday</string>
+    <string name="tuesdayTView">Tuesdays current date and time:</string>
+    <string name="wednesdayBtn">Wednesday</string>
+    <string name="wednesdayTView">Wednesdays current date and time:</string>
+    <string name="writeDiaryEntryHere">Write diary entry here</string>
+    <!-- From: file:/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

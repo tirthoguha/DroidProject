@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.s0217980_diary.Home_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <fragment
+        android:id="@+id/monday_fragment"
+        android:name="com.example.s0217980_diary.Monday_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <fragment
+        android:id="@+id/tuesday_fragment"
+        android:name="com.example.s0217980_diary.Tuesday_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <fragment
+        android:id="@+id/wednesday_fragment"
+        android:name="com.example.s0217980_diary.Wednesday_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <fragment
+        android:id="@+id/thursday_fragment"
+        android:name="com.example.s0217980_diary.Thursday_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <fragment
+        android:id="@+id/friday_fragment"
+        android:name="com.example.s0217980_diary.Friday_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    
+</FrameLayout><!-- From: file:/Users/tirthoguha/Documents/android/workspace/S0217980_diary/res/layout/activity_main.xml -->

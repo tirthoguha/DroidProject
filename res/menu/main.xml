@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_profile" />
+	    <!-- android:onClick="profile_Click" -->
+        
+     <item
+        android:id="@+id/action_saveEntries"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_saveEntries"/>
+      <item
+        android:id="@+id/action_sendAllEntries"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_sendAllEntries"/>
+
+</menu>

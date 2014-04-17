@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_gravity="center_horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+		
+
+<!-- Mon - Fri buttons -->
+        <LinearLayout
+         android:id="@+id/daysLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+           
+        <Button
+        android:id="@+id/mondayBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mondayBtn"
+        android:onClick="monClick"
+        />
+        
+
+    	<Button
+        android:id="@+id/tuesdayBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tuesdayBtn"
+        android:onClick="tuesClick"
+         />
+
+    	<Button
+        android:id="@+id/wednesdayBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wednesdayBtn"
+        android:onClick="wedClick"
+         />
+
+   	 	<Button
+        android:id="@+id/thursdayBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thursdayBtn"
+        android:onClick="thursClick"
+         />
+
+    	<Button
+        android:id="@+id/fridayBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fridayBtn"
+        android:onClick="friClick"
+         />
+
+        </LinearLayout>
+
+        
+
+<!-- Previous, Next & Home buttons -->
+<LinearLayout
+    android:id="@+id/buttonsLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+    <Button
+        android:id="@+id/previousBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/previousBtn"
+        android:onClick="previous_Home_Click"
+         />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/nextBtn"
+        android:onClick="next_Home_Click"
+         />
+
+    
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/homeBtn"
+         />
+</LinearLayout>
+
+</RelativeLayout>

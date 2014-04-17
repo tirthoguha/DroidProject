@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_userName" />
+
+    <EditText
+        android:id="@+id/userNameEText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/profile_hint1"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/passwordTView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_password" />
+
+    <EditText
+        android:id="@+id/passwordEText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/profile_hint2"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/repeatPasswordTView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_password" />
+
+    <EditText
+        android:id="@+id/repeatPasswordEText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/profile_hint3"
+        android:inputType="textPassword" >
+    </EditText>
+    
+    <LinearLayout 
+    android:id="@+id/profileButtonsLayout" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+   
+    >
+    <Button 
+        android:id="@+id/saveProfileBtn" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="1" 
+        android:text="@string/profile_saveBtn">
+    </Button>
+    <Button 
+        android:id="@+id/cancelProfileBtn" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:text="@string/profile_cancelBtn"
+        android:onClick="home_Click" >
+    </Button>
+</LinearLayout>
+
+</LinearLayout>

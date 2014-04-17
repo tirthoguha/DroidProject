@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">S0217980_diary</string>
+    <string name="action_settings">Settings</string>
+    <string name="mondayBtn">Monday</string>
+    <string name="tuesdayBtn">Tuesday</string>
+    <string name="wednesdayBtn">Wednesday</string>
+    <string name="thursdayBtn">Thursday</string>
+    <string name="fridayBtn">Friday</string>
+    <string name="previousBtn">Previous</string>
+    <string name="nextBtn">Next</string>
+    <string name="homeBtn">Home</string>
+    <string name="saveDiaryEntryBtn">Save Diary Entry</string>
+    <string name="showDiaryEntriesBtn">Show Diary Entries</string>
+    
+     <string name="mondayTView">Mondays current date and time:</string>
+     <string name="tuesdayTView">Tuesdays current date and time:</string>
+     <string name="wednesdayTView">Wednesdays current date and time:</string>
+     <string name="thursdayTView">Thursdays current date and time:</string>
+     <string name="fridayTView">Fridays current date and time:</string>
+     
+    <string name="diaryEntryTView">Diary Entry:</string>
+    <string name="writeDiaryEntryHere">Write diary entry here</string>
+    
+    <string name="menu_profile">Profile</string>
+    <string name="menu_saveEntries">Save entries</string>
+    <string name="menu_sendAllEntries">Send all entries</string>
+    
+    <string name="profile_userName">CQU username:</string>
+    <string name="profile_password">Password:</string>
+    <string name="profile_repeatPassword">Repeat password:</string>
+    
+    <string name="profile_hint1">Your name?</string>
+    <string name="profile_hint2">Password?</string>
+    <string name="profile_hint3">Repeat password here</string>
+    
+    
+    <string name="profile_saveBtn">Save profile</string>
+    <string name="profile_cancelBtn">Cancel profile</string>
+    
+    
+    <string name="return_mon_Btn">Return to Monday Diary</string>
+    <string name="return_tue_Btn">Return to Tuesday Diary</string>
+    <string name="return_wed_Btn">Return to Wednesday Diary</string>
+	<string name="return_thurs_Btn">Return to Thursday Diary</string>
+    <string name="return_fri_Btn">Return to Friday Diary</string>
+    
+    
+
+</resources>
