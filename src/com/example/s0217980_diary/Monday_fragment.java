@@ -13,10 +13,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Monday_fragment extends Fragment {
 
-    public static ArrayList<String> myStringList;
+    public  ArrayList<String> myStringList;
     Bundle bundle;
 
     @Override
@@ -52,9 +53,7 @@ public class Monday_fragment extends Fragment {
         return stringList;
     }
 
-    public static ArrayList<String> getMyStringList() {
-        return myStringList;
-    }
+  
 
     @Override
     public void onStart() {
@@ -77,12 +76,16 @@ public class Monday_fragment extends Fragment {
                 String entryEntered = entryText.getText().toString();
 
                 ArrayList<DiaryLogs> entryLogs = new ArrayList<DiaryLogs>();
+                
                 DiaryLogs dl = new DiaryLogs(1, timeEntry, entryEntered);
                 entryLogs.add(dl);
-
+                entryText.setText("");
+                
+                Toast.makeText(getActivity(),"Entry added \n"+dl, Toast.LENGTH_SHORT).show();
                 myStringList = toStringList(entryLogs);
+                
 
-                //
+                
 
             }
 

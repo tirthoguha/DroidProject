@@ -11,26 +11,22 @@ import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 public class Monday_list_fragment extends ListFragment {
-    ArrayList<String> test;
+    ArrayList<String> logs;
     Bundle bundle;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-       
+    	
         super.onCreate(savedInstanceState);
-        bundle = getArguments();
-        System.out.println(bundle);
-       //test = bundle.getStringArrayList("list");
+        
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-
-        return inflater
+  return inflater
                 .inflate(R.layout.monday_list_fragment, container, false);
 
     }
@@ -39,11 +35,18 @@ public class Monday_list_fragment extends ListFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
         super.onViewCreated(view, savedInstanceState);
-
-       /* ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
-                android.R.layout.simple_list_item_1, test);
-        // once adapter set throws runtime error
-        setListAdapter(adapter);*/
+        bundle = this.getArguments();
+        if (bundle != null){
+    	logs = bundle.getStringArrayList("list");
+    
+    	 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
+                 android.R.layout.simple_list_item_1, logs);
+         setListAdapter(adapter);
+         
+        }
+        
+        
+      
 
     }
 
