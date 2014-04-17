@@ -21,7 +21,7 @@ public class Monday_list_fragment extends ListFragment {
         super.onCreate(savedInstanceState);
         bundle = getArguments();
         System.out.println(bundle);
-       test = bundle.getStringArrayList("list");
+       //test = bundle.getStringArrayList("list");
 
     }
 
