@@ -8,61 +8,71 @@
         android:name="com.example.s0217980_diary.Home_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/monday_fragment"
         android:name="com.example.s0217980_diary.Monday_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/tuesday_fragment"
         android:name="com.example.s0217980_diary.Tuesday_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/wednesday_fragment"
         android:name="com.example.s0217980_diary.Wednesday_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/thursday_fragment"
         android:name="com.example.s0217980_diary.Thursday_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/friday_fragment"
         android:name="com.example.s0217980_diary.Friday_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/profile_main"
         android:name="com.example.s0217980_diary.Profile_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/monday_list_fragment"
         android:name="com.example.s0217980_diary.Monday_list_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/tuesday_list_fragment"
         android:name="com.example.s0217980_diary.Tuesday_list_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/wednesday_list_fragment"
         android:name="com.example.s0217980_diary.Wednesday_list_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/thursday_list_fragment"
         android:name="com.example.s0217980_diary.Thursday_list_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
+
     <fragment
         android:id="@+id/friday_list_fragment"
         android:name="com.example.s0217980_diary.Friday_list_fragment"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
-    
-    
+
 </FrameLayout>
