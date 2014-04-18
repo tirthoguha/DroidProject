@@ -37,10 +37,11 @@ public class Monday_fragment extends Fragment {
 
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
-		currentDateTime();
 		
 		super.onViewCreated(view, savedInstanceState);
-		
+		currentDateTime();
+		entryLogs = new ArrayList<DiaryLogs>();
+		myStringList = new ArrayList<String>();
 		
 	}
 
@@ -121,8 +122,7 @@ public class Monday_fragment extends Fragment {
 		// TODO Auto-generated method stub
 
 		super.onCreate(savedInstanceState);
-		entryLogs = new ArrayList<DiaryLogs>();
-		myStringList = new ArrayList<String>();
+		
 		/*if (savedInstanceState != null) {
             // Restore last state for checked position.
 			myStringList = savedInstanceState.getStringArrayList("list");
