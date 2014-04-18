@@ -62,7 +62,7 @@ public class Monday_fragment extends Fragment {
 	@Override
 	public void onStart() {
 		entryLogs = new ArrayList<DiaryLogs>();
-		
+
 		timeText = (EditText) getView().findViewById(R.id.dateTimeEText);
 
 		entryText = (EditText) getView().findViewById(R.id.diaryEntryEText);
@@ -89,18 +89,17 @@ public class Monday_fragment extends Fragment {
 				Toast.makeText(getActivity(), "Entry added \n" + dl,
 						Toast.LENGTH_SHORT).show();
 						entryText.setText("");
-				
-				
-				
 
-				
+
+
+
+
 
 			}
 
 		}
 
 		);
-		System.out.println(entryLogs);
 		
 		Button showBtn = (Button) getView().findViewById(
 				R.id.showDiaryEntriesBtn);
