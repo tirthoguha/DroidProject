@@ -1,13 +1,12 @@
 package com.example.s0217980_diary;
 
-import java.util.ArrayList;
 
 public class DiaryLogs {
 	
 	//public static ArrayList<DiaryLogs> entryLogs;
 
-	static String timeEntry;
-	static String entryEntered;
+	 String timeEntry;
+	 String entryEntered;
 	int day;
 
 	// single constructor that takes an integer and two string
@@ -15,7 +14,7 @@ public class DiaryLogs {
 		super();
 		this.day = day;
 		this.timeEntry = timeEntry;
-		DiaryLogs.entryEntered = entryEntered;
+		this.entryEntered = entryEntered;
 
 	}
 
@@ -27,12 +26,12 @@ public class DiaryLogs {
 		this.timeEntry = timeEntry;
 	}
 
-	public static String getEntryEntered() {
+	public  String getEntryEntered() {
 		return entryEntered;
 	}
 
 	public void setEntryEntered(String entryEntered) {
-		DiaryLogs.entryEntered = entryEntered;
+		this.entryEntered = entryEntered;
 	}
 
 	public int getDay() {
@@ -46,7 +45,7 @@ public class DiaryLogs {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return this.timeEntry + "\n" + DiaryLogs.entryEntered;
+		return this.timeEntry + "\n" + this.entryEntered;
 
 		
 	}

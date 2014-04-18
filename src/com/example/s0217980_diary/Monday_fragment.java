@@ -23,8 +23,8 @@ public class Monday_fragment extends Fragment {
 	EditText timeText;
 	EditText entryText;
 	DiaryLogs dl;
-	String timeEntry;
-	String entryEntered;
+/*	String timeEntry;
+	String entryEntered;*/
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,7 +64,7 @@ public class Monday_fragment extends Fragment {
 	@Override
 	public void onStart() {
 		entryLogs = new ArrayList<DiaryLogs>();
-
+		
 		timeText = (EditText) getView().findViewById(R.id.dateTimeEText);
 
 		entryText = (EditText) getView().findViewById(R.id.diaryEntryEText);
@@ -77,29 +77,23 @@ public class Monday_fragment extends Fragment {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 
-				timeEntry = timeText.getText().toString();
+				String timeEntry = timeText.getText().toString();
 
-				entryEntered = entryText.getText().toString();
+				String entryEntered = entryText.getText().toString();
 
 				dl = new DiaryLogs(1, timeEntry, entryEntered);
 
 				entryLogs.add(dl);
 
 
-				Toast.makeText(getActivity(), "Entry added \n" + dl,
-						Toast.LENGTH_SHORT).show();
-						entryText.setText("");
-
-
-
-
-
+													
 
 			}
 
 		}
 
 		);
+		
 		
 		Button showBtn = (Button) getView().findViewById(
 				R.id.showDiaryEntriesBtn);
@@ -108,34 +102,28 @@ public class Monday_fragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
-				if (entryLogs != null) {
-					// convert entryLogs to ArrayList<String> using method toStringList
+				// convert entryLogs to ArrayList<String> using method toStringList
 					myStringList = toStringList(entryLogs);
-				}
-				
-				if (myStringList != null) {
-					bundle = new Bundle();
+					
+					
 					FragmentManager fragmentManager = getFragmentManager();
 					FragmentTransaction fragmentTransaction = fragmentManager
 							.beginTransaction();
+				
+					bundle = new Bundle();
 					Monday_list_fragment mlf = new Monday_list_fragment();
-
 					bundle.putStringArrayList("list", myStringList);
 					mlf.setArguments(bundle);
 
 					fragmentTransaction.replace(android.R.id.content, mlf);
 					fragmentTransaction.commit();
-				}
-				if (myStringList == null) {
-					Toast.makeText(getActivity(),
-							"No entry have been added yet", Toast.LENGTH_SHORT)
-							.show();
-				}
+				
+				
 			}
 		});
 
 		super.onStart();
+		
 	}
 
 	@Override
