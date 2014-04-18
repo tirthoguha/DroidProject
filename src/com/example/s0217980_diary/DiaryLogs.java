@@ -6,7 +6,8 @@ public class DiaryLogs {
 	
 	//public static ArrayList<DiaryLogs> entryLogs;
 
-	String timeEntry, entryEntered;
+	static String timeEntry;
+	static String entryEntered;
 	int day;
 
 	// single constructor that takes an integer and two string
@@ -14,7 +15,7 @@ public class DiaryLogs {
 		super();
 		this.day = day;
 		this.timeEntry = timeEntry;
-		this.entryEntered = entryEntered;
+		DiaryLogs.entryEntered = entryEntered;
 
 	}
 
@@ -26,12 +27,12 @@ public class DiaryLogs {
 		this.timeEntry = timeEntry;
 	}
 
-	public String getEntryEntered() {
+	public static String getEntryEntered() {
 		return entryEntered;
 	}
 
 	public void setEntryEntered(String entryEntered) {
-		this.entryEntered = entryEntered;
+		DiaryLogs.entryEntered = entryEntered;
 	}
 
 	public int getDay() {
@@ -45,7 +46,7 @@ public class DiaryLogs {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return this.timeEntry + "\n" + this.entryEntered;
+		return this.timeEntry + "\n" + DiaryLogs.entryEntered;
 
 		
 	}

@@ -17,110 +17,127 @@ import android.widget.Toast;
 
 public class Monday_fragment extends Fragment {
 
-    public  ArrayList<String> myStringList;
-    Bundle bundle;
+	public ArrayList<String> myStringList;
+	Bundle bundle;
+	ArrayList<DiaryLogs> entryLogs;
+	EditText timeText;
+	EditText entryText;
+	DiaryLogs dl;
+	String timeEntry;
+	String entryEntered;
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.monday_fragment, container, false);
+		return inflater.inflate(R.layout.monday_fragment, container, false);
 
-    }
+	}
 
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        currentDateTime();
-        super.onViewCreated(view, savedInstanceState);
+	@Override
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		currentDateTime();
+		super.onViewCreated(view, savedInstanceState);
 
-    }
+	}
 
-    public void currentDateTime() {
-        EditText timeText = (EditText) getView().findViewById(
-                R.id.dateTimeEText);
-        SimpleDateFormat df = new SimpleDateFormat("d/M/yyyy:H:m");
-        String dateTime = df.format(Calendar.getInstance().getTime());
-        timeText.setText(dateTime);
-    }
+	public void currentDateTime() {
+		EditText timeText = (EditText) getView().findViewById(
+				R.id.dateTimeEText);
+		SimpleDateFormat df = new SimpleDateFormat("d/M/yyyy:H:m");
+		String dateTime = df.format(Calendar.getInstance().getTime());
+		timeText.setText(dateTime);
+	}
 
-    public ArrayList<String> toStringList(Collection<DiaryLogs> entryLogs) {
-        ArrayList<String> stringList = new ArrayList<String>();
+	public ArrayList<String> toStringList(Collection<DiaryLogs> entryLogs) {
+		ArrayList<String> stringList = new ArrayList<String>();
 
-        for (DiaryLogs myobj : entryLogs) {
-            stringList.add(myobj.toString());
-        }
+		for (DiaryLogs myobj : entryLogs) {
+			stringList.add(myobj.toString());
+		}
 
-        return stringList;
-    }
+		return stringList;
+	}
 
-  
+	@Override
+	public void onStart() {
+		entryLogs = new ArrayList<DiaryLogs>();
+		
+		timeText = (EditText) getView().findViewById(R.id.dateTimeEText);
 
-    @Override
-    public void onStart() {
+		entryText = (EditText) getView().findViewById(R.id.diaryEntryEText);
 
-        Button saveBtn = (Button) getView()
-                .findViewById(R.id.saveDiaryEntryBtn);
-        saveBtn.setOnClickListener(new View.OnClickListener() {
+		Button saveBtn = (Button) getView()
+				.findViewById(R.id.saveDiaryEntryBtn);
+		saveBtn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
 
-                EditText timeText = (EditText) getView().findViewById(
-                        R.id.dateTimeEText);
+				timeEntry = timeText.getText().toString();
 
-                EditText entryText = (EditText) getView().findViewById(
-                        R.id.diaryEntryEText);
-                String timeEntry = timeText.getText().toString();
+				entryEntered = entryText.getText().toString();
 
-                String entryEntered = entryText.getText().toString();
+				dl = new DiaryLogs(1, timeEntry, entryEntered);
 
-                ArrayList<DiaryLogs> entryLogs = new ArrayList<DiaryLogs>();
-                
-                DiaryLogs dl = new DiaryLogs(1, timeEntry, entryEntered);
-                entryLogs.add(dl);
-                entryText.setText("");
-                
-                Toast.makeText(getActivity(),"Entry added \n"+dl, Toast.LENGTH_SHORT).show();
-                myStringList = toStringList(entryLogs);
-                
+				entryLogs.add(dl);
+				//convert entryLogs to string array list
+				//myStringList = toStringList(entryLogs);
+				//myStringList.addAll(toStringList(entryLogs));
 
-                
+				Toast.makeText(getActivity(), "Entry added \n" + dl,
+						Toast.LENGTH_SHORT).show();
+						entryText.setText("");
+				
+				
+				
 
-            }
+				
 
-        }
+			}
 
-        );
+		}
 
-        Button showBtn = (Button) getView().findViewById(
-                R.id.showDiaryEntriesBtn);
-        showBtn.setOnClickListener(new View.OnClickListener() {
+		);
+		System.out.println(entryLogs);
+		
+		Button showBtn = (Button) getView().findViewById(
+				R.id.showDiaryEntriesBtn);
+		showBtn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager
-                        .beginTransaction();
-                Monday_list_fragment mlf = new Monday_list_fragment();
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
 
-                Bundle bundle = new Bundle();
-                bundle.putStringArrayList("list", myStringList);
-                mlf.setArguments(bundle);
-                fragmentTransaction.replace(android.R.id.content, mlf);
-                fragmentTransaction.commit();
+				if (myStringList != null) {
+					bundle = new Bundle();
+					FragmentManager fragmentManager = getFragmentManager();
+					FragmentTransaction fragmentTransaction = fragmentManager
+							.beginTransaction();
+					Monday_list_fragment mlf = new Monday_list_fragment();
 
-            }
-        });
+					bundle.putStringArrayList("list", myStringList);
+					mlf.setArguments(bundle);
 
-        super.onStart();
-    }
+					fragmentTransaction.replace(android.R.id.content, mlf);
+					fragmentTransaction.commit();
+				}
+				if (myStringList == null) {
+					Toast.makeText(getActivity(),
+							"No entry have been added yet", Toast.LENGTH_SHORT)
+							.show();
+				}
+			}
+		});
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        super.onCreate(savedInstanceState);
-    }
+		super.onStart();
+	}
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+	}
 
 }
