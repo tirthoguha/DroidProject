@@ -37,6 +37,7 @@ public class Monday_fragment extends Fragment {
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		currentDateTime();
+		
 		super.onViewCreated(view, savedInstanceState);
 
 	}
@@ -57,6 +58,7 @@ public class Monday_fragment extends Fragment {
 		}
 
 		return stringList;
+		
 	}
 
 	@Override
@@ -66,7 +68,7 @@ public class Monday_fragment extends Fragment {
 		timeText = (EditText) getView().findViewById(R.id.dateTimeEText);
 
 		entryText = (EditText) getView().findViewById(R.id.diaryEntryEText);
-
+		
 		Button saveBtn = (Button) getView()
 				.findViewById(R.id.saveDiaryEntryBtn);
 		saveBtn.setOnClickListener(new View.OnClickListener() {
@@ -82,9 +84,7 @@ public class Monday_fragment extends Fragment {
 				dl = new DiaryLogs(1, timeEntry, entryEntered);
 
 				entryLogs.add(dl);
-				//convert entryLogs to string array list
-				//myStringList = toStringList(entryLogs);
-				//myStringList.addAll(toStringList(entryLogs));
+
 
 				Toast.makeText(getActivity(), "Entry added \n" + dl,
 						Toast.LENGTH_SHORT).show();
@@ -108,7 +108,12 @@ public class Monday_fragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
+				
+				if (entryLogs != null) {
+					// convert entryLogs to ArrayList<String> using method toStringList
+					myStringList = toStringList(entryLogs);
+				}
+				
 				if (myStringList != null) {
 					bundle = new Bundle();
 					FragmentManager fragmentManager = getFragmentManager();
@@ -136,6 +141,7 @@ public class Monday_fragment extends Fragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
+		
 		super.onCreate(savedInstanceState);
 	}
 

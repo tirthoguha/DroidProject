@@ -19,7 +19,7 @@ public class DiaryLogs {
 
 	}
 
-	public String getTimeEntry() {
+	public String getTimeEntry() {	
 		return timeEntry;
 	}
 
