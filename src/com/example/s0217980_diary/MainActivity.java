@@ -23,11 +23,11 @@ public class MainActivity extends Activity {
 
 
 		public static int Monday=0;
-	    /*public static int Tuesday=1;
+	    public static int Tuesday=1;
 	    public static int Wednesday=2;
 	    public static int Thursday=3;
 	    public static int Friday=4;
-	    public static String timeEntry;
+/*	    public static String timeEntry;
 	    public static String entryEntered;*/
 	   // public static ArrayList<String> logs;
 	    //public static String[] entry;

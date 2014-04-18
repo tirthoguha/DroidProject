@@ -40,7 +40,8 @@ public class Monday_list_fragment extends ListFragment {
 			ArrayAdapter<String> adapter = new ArrayAdapter<String>(
 					getActivity(), android.R.layout.simple_list_item_1, logs);
 			setListAdapter(adapter);
-
+			adapter.notifyDataSetChanged();
+			//System.out.println(Monday_fragment.myStringList);
 		}
 
 	}
